@@ -1,9 +1,11 @@
-npm:
-    pkg:
-        - installed
-byobu:
-    pkg:
-        - installed
-vim:
-    pkg:
-        - installed
+basic_tools:
+    pkg.installed:
+        - names:
+            - git
+            - npm
+            - curl
+            - make
+            - build-essential
+            - libssl-dev
+            - byobu
+            - vim
