@@ -10,4 +10,7 @@ apt-get install -y build-essential
 apt-get install -y libssl-dev
 apt-get install -y byobu
 apt-get install -y vim
+apt-get install -y xpdf
+apt-get install -y mdbtools
+apt-get install -y python-pip
 

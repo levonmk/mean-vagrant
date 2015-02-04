@@ -4,6 +4,13 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 #after adding packagest to .vmrc:
 vim +PluginInstall +qall
 
+#virtualenvwrapper
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+echo 'export WORKON_HOME=~/Envs' >> ~/.bashrc
+echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc
+mkdir -p ~/Envs
+
 #rails
 curl -L get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
@@ -30,4 +37,5 @@ sudo start mongod
 
 #making npm work as per http://stackoverflow.com/a/13119867
 #npm config set registry http://registry.npmjs.org/
+#http://stackoverflow.com/questions/26476744/nvm-ls-remote-command-results-in-n-a
 

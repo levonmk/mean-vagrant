@@ -21,8 +21,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network "forwarded_port", guest: 3000, host: 3000
 
     # general use
-    config.vm.network "forwarded_port", guest: 8000, host: 8000
     config.vm.network "forwarded_port", guest: 8080, host: 8080
+    config.vm.network "forwarded_port", guest: 8888, host: 8888
     
     # Disable automatic box update checking. If you disable this, then
     # boxes will only be checked for updates when the user runs
@@ -31,7 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     
     # Create a private network, which allows host-only access to the machine
     # using a specific IP.
-    # config.vm.network "private_network", ip: "192.168.33.10"
+    config.vm.network "private_network", ip: "192.168.33.10"
     
     # Create a public network, which generally matched to bridged network.
     # Bridged networks make the machine appear as another physical device on
